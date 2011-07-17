@@ -19,7 +19,8 @@ To run the Kafka demo, see the scripts provided in the bin directory
 
 	`bin/basic-producer-example.sh`
 
-	Run the kafka consumer shell [see quickstart](http://sna-projects.com/kafka/quickstart.php)
+	Run the kafka consumer shell. [See quickstart](http://sna-projects.com/kafka/quickstart.php) for more details
+	
 	`kafka/bin/kafka-consumer-shell.sh --topic test-topic --props config/consumer.properties`
 
 * Run the producer encoder example
