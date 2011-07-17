@@ -5,7 +5,7 @@ This repository has the Kafka demos used at Scalathon.
 ## How to build ? ##
 The demo uses SBT 0.7.5
 
-./sbt update package
+`./sbt update package`
 
 ## How to run ? ##
 
@@ -15,27 +15,39 @@ To run the Kafka demo, see the scripts provided in the bin directory
 
 ### Kafka producer examples ###
 
-1. Run the basic producer examples - bin/basic-producer-example.sh
+* Run the basic producer examples 
 
-Run the kafka consumer shell [see quickstart](http://sna-projects.com/kafka/quickstart.php)
-kafka/bin/kafka-consumer-shell.sh --topic test-topic --props config/consumer.properties
+	`bin/basic-producer-example.sh`
 
-2. Run the producer encoder example - bin/producer-encoder-example.sh
+	Run the kafka consumer shell [see quickstart](http://sna-projects.com/kafka/quickstart.php)
+	`kafka/bin/kafka-consumer-shell.sh --topic test-topic --props config/consumer.properties`
 
-Run the kafka consumer shell to consume that data 
-kafka/bin/kafka-consumer-shell.sh --topic member-records --props config/consumer.properties
+* Run the producer encoder example
 
-3. Run the producer partitioner example - bin/producer-partitioner-example.sh
+	`bin/producer-encoder-example.sh
 
-Spin up another kafka consumer in the same group and topic to see automatic load balancing amongst the two consumers
+	Run the kafka consumer shell to consume that data 
 
-kafka/bin/kafka-consumer-shell.sh --topic member-records --props config/consumer.properties
+	`kafka/bin/kafka-consumer-shell.sh --topic member-records --props config/consumer.properties`
 
-Run the producer partitioner again and observe, all the "US" location records go to one consumer, while all "EUR" records go to the other consumer
+* Run the producer partitioner example
+
+	`bin/producer-partitioner-example.sh`
+
+	Spin up another kafka consumer in the same group and topic to see automatic load balancing amongst the two consumers
+
+	`kafka/bin/kafka-consumer-shell.sh --topic member-records --props config/consumer.properties`
+
+	Run the producer partitioner again and observe, all the "US" location records go to one consumer, while all "EUR" records go to the other consumer
 
 ### Kafka consumer examples ###
 
-Run the consumer decoder examples to consumer all data from the "member-records" topic
-bin/consumer-decoder-example.sh
+* Run the consumer decoder examples to consumer all data from the "member-records" topic
+
+	`bin/consumer-decoder-example.sh`
+
+### Want to contribute to Kafka ? ###
 
 For project ideas to contribute to Kafka, see our [projects page](http://sna-projects.com/kafka/projects.php)
+
+Send us a pull request [here](https://github.com/kafka-dev/kafka)
