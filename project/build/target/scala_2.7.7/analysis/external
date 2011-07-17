@@ -1,0 +1,5 @@
+#External Dependencies
+#Thu Jul 14 21:08:36 PDT 2011
+/Users/nnarkhed/network/Projects/scalathon/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/ivy_2.7.7-0.7.5.jar=ScalathonProject.scala
+/Users/nnarkhed/network/Projects/scalathon/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/sbt_2.7.7-0.7.5.jar=ScalathonProject.scala
+/Users/nnarkhed/network/Projects/scalathon/project/boot/scala-2.7.7/lib/scala-library.jar=ScalathonProject.scala
